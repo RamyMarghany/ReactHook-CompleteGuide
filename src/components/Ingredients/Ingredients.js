@@ -73,7 +73,7 @@ const Ingredients = () => {
     setIsLoading(false);
   }, []);
 
-  // useMemo when don't want to recalculate a bunch of code whenever the component renders but really only recalculate when you'd need to recalculate it (array of dependencies)
+  // useMemo when don't want to recalculate a bunch of code whenever the component renders but really only recalculate when you'd need to recalculate it (array of dependencies) and useMemo has advantage than using React.memo because useMemo can save any kind of data
   const ingredientList = useMemo(() => {
     return (
       <IngredientList
